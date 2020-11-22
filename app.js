@@ -143,6 +143,7 @@ function clearTasks() {
 
   // Clear from LS
   clearFromTasksFromLocalStorage();
+  localStorage.clear();
 }
 
 // Clear Tasks from LS
@@ -162,5 +163,3 @@ function filterTasks(e) {
     }
   });
 }
-
-// localStorage.clear();
