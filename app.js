@@ -14,8 +14,10 @@ function loadEventListeners() {
   form.addEventListener('submit', addTask);
   // Remove task event
   taskList.addEventListener('click', removeTask);
-  // clear task event
+  // Clear task event
   clearBtn.addEventListener('click', clearTasks);
+  // Filter tasks event
+  filter.addEventListener('keyup', filterTasks);
 }
 
 // Add task
@@ -66,3 +68,6 @@ function clearTasks() {
     taskList.removeChild(taskList.firstChild);
   }
 }
+
+// Filter tasks
+function filterTasks() {}
