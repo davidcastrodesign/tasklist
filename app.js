@@ -1,3 +1,4 @@
+// Define UI Variables
 const form = document.querySelector('#task-form');
 const taskList = document.querySelector('.collection');
 const clearBtn = document.querySelector('.clear-tasks');
@@ -44,6 +45,9 @@ function addTask(e) {
   // Append li to ul
   taskList.appendChild(li);
 
+  // Store in Local Storage
+  storeTaskInLocalStorage();
+
   // Clear input
   taskInput.value = '';
 
@@ -68,6 +72,9 @@ function clearTasks() {
     taskList.removeChild(taskList.firstChild);
   }
 }
+
+// Store Task
+function storeTaskInLocalStorage() {}
 
 // Filter tasks
 function filterTasks(e) {
