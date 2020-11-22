@@ -11,6 +11,8 @@ loadEventListeners();
 
 // load all event listeners
 function loadEventListeners() {
+  // DOM Load event
+  document.addEventListener('DOMContentLoaded', getTasks);
   // Add task event
   form.addEventListener('submit', addTask);
   // Remove task event
@@ -54,6 +56,9 @@ function addTask(e) {
   // Used to stop default form-submit behavior
   e.preventDefault();
 }
+
+// Get Tasks from LS
+function getTasks() {}
 
 // Store Task
 function storeTaskInLocalStorage(task) {
