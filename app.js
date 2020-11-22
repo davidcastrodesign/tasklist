@@ -46,3 +46,10 @@ function addTask(e) {
   // Used to stop default form-submit behavior
   e.preventDefault();
 }
+
+// Romove task
+function removeTask(e) {
+  if (e.target.parentElement.classList.contains('delete-item')) {
+    e.target.parentElement.parentElement.remove();
+  }
+}
