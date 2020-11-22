@@ -108,8 +108,18 @@ function removeTask(e) {
       e.target.parentElement.parentElement.remove();
 
       // Remove from LS
-      removeTaskFromLocalStorage();
+      removeTaskFromLocalStorage(e.target.parentElement.parentElement);
     }
+  }
+}
+
+// Remove from LS
+function removeTaskFromLocalStorage(taskItem) {
+  let tasks;
+  if (localStorage.getItem('tasks') === null) {
+    tasks = [];
+  } else {
+    tasks = JSON.parse(localStorage.getItem('tasks'));
   }
 }
 
