@@ -70,4 +70,16 @@ function clearTasks() {
 }
 
 // Filter tasks
-function filterTasks() {}
+function filterTasks(e) {
+  const text = e.target.value.toLowerCase();
+
+  // querySlectorAll return a node list opposed to getElementByClass returns html collection which will needs to be turned into an array
+  document.querySelectorAll('.collection-item').forEach(function (task) {
+    const item = task.firstChild.textContent;
+    if (item.toLocaleLowerCase().indexOf(text) != -1) {
+      task.style.display = 'block';
+    } else {
+      task.style.display = 'none';
+    }
+  });
+}
