@@ -23,6 +23,16 @@ function loadEventListeners() {
   filter.addEventListener('keyup', filterTasks);
 }
 
+// Get Tasks from LS
+function getTasks() {
+  let tasks;
+  if (localStorage.getItem('tasks') === null) {
+    tasks = [];
+  } else {
+    tasks = JSON.parse(localStorage.getItem('tasks'));
+  }
+}
+
 // Add task
 function addTask(e) {
   if (taskInput.value === '') {
@@ -47,7 +57,7 @@ function addTask(e) {
   // Append li to ul
   taskList.appendChild(li);
 
-  // Store in Local Storage
+  // Store in LS-Local Storage
   storeTaskInLocalStorage(taskInput.value);
 
   // Clear input
@@ -56,9 +66,6 @@ function addTask(e) {
   // Used to stop default form-submit behavior
   e.preventDefault();
 }
-
-// Get Tasks from LS
-function getTasks() {}
 
 // Store Task
 function storeTaskInLocalStorage(task) {
