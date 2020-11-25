@@ -17,11 +17,26 @@ Once tasks are listed, the user can erase them one at a time or choose to clear 
 
 # App Interaction Screenshots
 
-## Landing Page
+## Landing Page & Task Input
 
 ![Landing Page](img/tasklist1.png?raw=true 'Landing Page')
-![Landing Page](img/tasklist2.png?raw=true 'Landing Page')
-![Landing Page](img/tasklist3.png?raw=true 'Landing Page')
-![Landing Page](img/tasklist4.png?raw=true 'Landing Page')
-![Landing Page](img/tasklist5.png?raw=true 'Landing Page')
-![Landing Page](img/tasklist6.png?raw=true 'Landing Page')
+
+## Task Added
+
+![Task Added](img/tasklist2.png?raw=true 'Task Added')
+
+## Task Filtered
+
+![Task Filtered](img/tasklist3.png?raw=true 'Task Filtered')
+
+## Task Clear Confirmation
+
+![Task Clear Confirmation](img/tasklist4.png?raw=true 'Task Clear Confirmation')
+
+## Tasks Filtered
+
+![Tasks Filtered](img/tasklist5.png?raw=true 'Tasks Filtered')
+
+## Clear All
+
+![Clear All](img/tasklist6.png?raw=true 'Clear All')
